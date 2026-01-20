@@ -1,0 +1,22 @@
+{
+  "en": {
+    "visionTitle": "Our Vision",
+    "visionText": "To become a leading digital product studio that empowers businesses and individuals through intelligent and scalable digital solutions.",
+    "missionTitle": "Our Mission",
+    "missionPoints": [
+      "Build impactful digital products that solve real-world problems",
+      "Help startups and businesses grow through technology",
+      "Create sustainable and user-centric digital ecosystems"
+    ]
+  },
+  "id": {
+    "visionTitle": "Visi Kami",
+    "visionText": "Menjadi perusahaan produk digital terdepan yang memberdayakan bisnis dan individu melalui solusi digital yang cerdas dan scalable.",
+    "missionTitle": "Misi Kami",
+    "missionPoints": [
+      "Membangun produk digital yang berdampak dan relevan",
+      "Membantu startup dan bisnis bertumbuh melalui teknologi",
+      "Menciptakan ekosistem digital yang berkelanjutan dan berorientasi pengguna"
+    ]
+  }
+}

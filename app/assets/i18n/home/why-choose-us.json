@@ -1,0 +1,38 @@
+{
+  "en": {
+    "title": "Built for Scalability",
+    "subtitle": "Why investors and partners choose Ruang Cipta Digital.",
+    "cards": [
+      {
+        "title": "SEO-First DNA",
+        "desc": "Organic discoverability is baked into our core architecture, not added as an afterthought."
+      },
+      {
+        "title": "User-Centric",
+        "desc": "We prioritize user experience to ensure high retention and sustainable growth metrics."
+      },
+      {
+        "title": "Modern Stack",
+        "desc": "Utilizing 2025's leading technologies to ensure future-proof and performant products."
+      }
+    ]
+  },
+  "id": {
+    "title": "Dibangun untuk Skalabilitas",
+    "subtitle": "Mengapa investor dan mitra memilih Ruang Cipta Digital.",
+    "cards": [
+      {
+        "title": "DNA SEO-First",
+        "desc": "Keterpuan organik tertanam dalam arsitektur inti kami, bukan sekadar tambahan."
+      },
+      {
+        "title": "User-Centric",
+        "desc": "Kami mengutamakan pengalaman pengguna untuk memastikan retensi tinggi dan metrik pertumbuhan."
+      },
+      {
+        "title": "Stack Modern",
+        "desc": "Menggunakan teknologi terdepan tahun 2025 untuk menjamin produk yang relevan di masa depan."
+      }
+    ]
+  }
+}

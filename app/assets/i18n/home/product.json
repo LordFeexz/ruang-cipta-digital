@@ -1,0 +1,66 @@
+{
+  "en": {
+    "title": "Our Innovation Lab",
+    "subtitle": "Purpose-built solutions for the modern web.",
+    "items": [
+      {
+        "name": "Apply Mate",
+        "links": "https://apply-mate.site/en",
+        "tag": "AI & Career",
+        "desc": "An AI-powered career assistance platform helping job seekers optimize CVs and find relevant opportunities through intelligent compatibility scoring.",
+        "features": [
+          "CV & Cover Letter Improvement",
+          "AI Compatibility Scoring",
+          "Curated Job Listings",
+          "Recruiter Talent Access"
+        ],
+        "value": "Reduce hiring mismatch and apply smarter."
+      },
+      {
+        "name": "Blog Press",
+        "links": "https://blog-press.site/en",
+        "tag": "SEO & Growth",
+        "desc": "A developer-friendly blogging engine designed for web apps, focused on organic growth while maintaining perfect brand consistency.",
+        "features": [
+          "SEO-Optimized Architecture",
+          "Brand Tone Alignment",
+          "Content-Driven Growth",
+          "Seamless API Integration"
+        ],
+        "value": "Boost organic traffic without engineering overhead."
+      }
+    ]
+  },
+  "id": {
+    "title": "Lab Inovasi Kami",
+    "subtitle": "Solusi tepat guna untuk web modern.",
+    "items": [
+      {
+        "name": "Apply Mate",
+        "links": "https://apply-mate.site/id",
+        "tag": "AI & Karir",
+        "desc": "Platform karir berbasis AI yang membantu pencari kerja mengoptimalkan CV dan menemukan peluang melalui skor kecocokan cerdas.",
+        "features": [
+          "Perbaikan CV & Cover Letter",
+          "Skor Kecocokan AI",
+          "Daftar Lowongan Terkurasi",
+          "Akses Talenta Rekruter"
+        ],
+        "value": "Mengurangi ketidakcocokan kerja dan melamar lebih cerdas."
+      },
+      {
+        "name": "Blog Press",
+        "links": "https://blog-press.site/id",
+        "tag": "SEO & Pertumbuhan",
+        "desc": "Mesin blog ramah developer untuk aplikasi web, fokus pada pertumbuhan organik dengan menjaga konsistensi brand yang sempurna.",
+        "features": [
+          "Arsitektur Teroptimasi SEO",
+          "Penyelarasan Tone Brand",
+          "Pertumbuhan Berbasis Konten",
+          "Integrasi API Mulus"
+        ],
+        "value": "Tingkatkan trafik organik tanpa beban engineering."
+      }
+    ]
+  }
+}
