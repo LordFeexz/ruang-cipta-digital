@@ -5,7 +5,7 @@
         'fixed w-full z-50 transition-all duration-300',
         scrolled
           ? 'bg-white/80 dark:bg-slate-900/80 backdrop-blur-md border-b border-slate-200 dark:border-slate-800 py-3'
-          : 'bg-transparent py-5'
+          : 'bg-transparent py-5',
       )
     "
   >
@@ -59,12 +59,13 @@
       leave-to-class="opacity-0 -translate-y-4"
       class="fixed inset-0 z-40 bg-white dark:bg-slate-950 pt-24 px-6 md:hidden"
     >
-      <nav class="flex flex-col gap-6">
+      <nav class="flex flex-col gap-6 h-full pb-10">
         <NuxtLink
           v-for="item in t"
           :key="item"
           :to="`#${item.toLowerCase().replace(' ', '-')}`"
-          class="text-sm font-medium text-slate-600 dark:text-slate-400 hover:text-blue-600 dark:hover:text-blue-400 transition-colors"
+          @click="isMenuOpen = false"
+          class="text-lg font-medium text-slate-600 dark:text-slate-400 hover:text-blue-600 dark:hover:text-blue-400 transition-colors py-2 flex items-center"
           :id="item.toLowerCase().replace(' ', '-')"
         >
           {{ item }}
@@ -72,10 +73,19 @@
         <div class="h-4 w-px bg-slate-200 dark:bg-slate-800" />
 
         <div class="flex items-center gap-2">
-          <CommonLangSwitcher />
+          <CommonLangSwitcher @select="isMenuOpen = false" />
 
           <CommonDarkModeToggle />
         </div>
+
+        <UiButton
+          variant="outline"
+          class="mt-auto w-full flex items-center justify-center gap-2 py-6 text-lg border-2"
+          @click="isMenuOpen = false"
+        >
+          <Icon name="lucide:x" class="w-5 h-5" />
+          <span class="sr-only"> Close Menu </span>
+        </UiButton>
       </nav>
     </Transition>
   </header>

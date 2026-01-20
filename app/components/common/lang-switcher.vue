@@ -4,7 +4,10 @@
       :variant="lang === LANG.EN ? 'default' : 'outline'"
       size="sm"
       class="px-3"
-      @click="setLang(LANG.EN)"
+      @click="
+        setLang(LANG.EN);
+        $emit('select');
+      "
     >
       EN
     </UiButton>
@@ -12,7 +15,10 @@
       :variant="lang === LANG.ID ? 'default' : 'outline'"
       size="sm"
       class="px-3"
-      @click="setLang(LANG.ID)"
+      @click="
+        setLang(LANG.ID);
+        $emit('select');
+      "
     >
       ID
     </UiButton>
@@ -23,4 +29,6 @@
 import { LANG } from "~~/shared/enums/global";
 
 const { lang, setLang } = useLang();
+
+defineEmits(["select"]);
 </script>
