@@ -43,8 +43,15 @@
         </div>
       </nav>
 
-      <UiButton class="md:hidden p-2" @click="isMenuOpen = !isMenuOpen">
-        <Icon :name="isMenuOpen ? 'lucide:x' : 'lucide:menu'" />
+      <UiButton
+        variant="ghost"
+        class="md:hidden p-2 flex items-center justify-center"
+        @click="isMenuOpen = !isMenuOpen"
+      >
+        <Icon
+          :name="isMenuOpen ? 'lucide:x' : 'lucide:menu'"
+          class="w-6 h-6"
+        />
         <span class="sr-only">Toggle menu</span>
       </UiButton>
     </div>
@@ -83,8 +90,8 @@
           class="mt-auto w-full flex items-center justify-center gap-2 py-6 text-lg border-2"
           @click="isMenuOpen = false"
         >
-          <Icon name="lucide:x" class="w-5 h-5" />
-          <span class="sr-only"> Close Menu </span>
+          <Icon name="lucide:x" class="w-6 h-6 text-slate-600 dark:text-slate-400" />
+          <span> Close Menu </span>
         </UiButton>
       </nav>
     </Transition>

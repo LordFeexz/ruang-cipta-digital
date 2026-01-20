@@ -9,7 +9,7 @@
             <div
               class="w-8 h-8 bg-blue-600 rounded-lg flex items-center justify-center"
             >
-              <Cpu class="text-white w-5 h-5" />
+              <Icon name="lucide:cpu" class="text-white w-5 h-5" />
             </div>
             <span class="font-bold text-lg text-slate-900 dark:text-white"
               >Ruang Cipta Digital</span
