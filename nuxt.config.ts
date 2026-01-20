@@ -14,6 +14,7 @@ export default defineNuxtConfig({
     "shadcn-nuxt",
     "@nuxtjs/color-mode",
     "@nuxtjs/robots",
+    "@nuxtjs/sitemap",
   ],
   shadcn: {
     /**
@@ -71,12 +72,19 @@ export default defineNuxtConfig({
   },
   ssr: true,
   nitro: {
-    preset: "node-server",
+    preset: "vercel",
     prerender: {
       routes: [...LANGS.map((lang) => `/${lang}`)],
     },
   },
   routeRules: {
     [`/(${LANGS.join("|")})`]: { ssr: true, static: true },
+  },
+  sitemap: {
+    urls: [...LANGS.map((lang) => `/${lang}`)],
+  },
+  site: {
+    url: process.env.DOMAIN,
+    name: "Ruang Cipta Digital",
   },
 });
