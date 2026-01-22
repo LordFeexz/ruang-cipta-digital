@@ -74,7 +74,7 @@ export default defineNuxtConfig({
   },
   ssr: true,
   nitro: {
-    preset: "vercel",
+    preset: "node-server",
     prerender: {
       routes: [...LANGS.map((lang) => `/${lang}`)],
     },
@@ -86,11 +86,15 @@ export default defineNuxtConfig({
     urls: [...LANGS.map((lang) => `/${lang}`)],
   },
   site: {
-    url: process.env.DOMAIN,
     name: "Ruang Cipta Digital",
   },
   nuxtElysia: {
     path: "/api",
     module: "~~/server/api",
+  },
+  vite: {
+    server: {
+      allowedHosts: true,
+    },
   },
 });

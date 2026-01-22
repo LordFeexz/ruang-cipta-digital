@@ -19,11 +19,11 @@ export default () =>
       } = useRuntimeConfig();
       const targetUrl = (() => {
         switch (true) {
-          case order_id.startsWith("am"):
+          case order_id.startsWith("AM"):
             return `${
               APPLY_MATE_URL || "http://localhost:3001/api"
             }/transaction/notify`;
-          case order_id.startsWith("bp"):
+          case order_id.startsWith("BP"):
             return `${
               BLOG_PRESS_URL || "http://localhost:3002/api"
             }/billing/notification`;
@@ -55,6 +55,7 @@ export default () =>
             transaction_status,
           }),
         });
+        console.log(response);
 
         const data = await response.json();
         return status(response.status, data);
