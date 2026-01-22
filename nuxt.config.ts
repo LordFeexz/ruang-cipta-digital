@@ -52,7 +52,6 @@ export default defineNuxtConfig({
     ],
   },
   app: {
-    baseURL: process.env.DOMAIN,
     head: {
       charset: "utf-16",
       viewport: "width=device-width, initial-scale=1",
