@@ -6,7 +6,7 @@
           'text-neutral-900 dark:text-neutral-300 antialiased',
           'font-sora',
           'scroll-smooth min-h-svh',
-          'bg-background'
+          'bg-background',
         )
       "
     >

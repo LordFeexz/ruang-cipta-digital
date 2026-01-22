@@ -15,6 +15,7 @@ export default defineNuxtConfig({
     "@nuxtjs/color-mode",
     "@nuxtjs/robots",
     "@nuxtjs/sitemap",
+    "nuxt-elysia",
   ],
   shadcn: {
     /**
@@ -68,11 +69,13 @@ export default defineNuxtConfig({
   runtimeConfig: {
     public: {
       DOMAIN: process.env.DOMAIN,
+      APPLY_MATE_URL: process.env.APPLY_MATE_URL,
+      BLOG_PRESS_URL: process.env.BLOG_PRESS_URL,
     },
   },
   ssr: true,
   nitro: {
-    preset: "vercel",
+    // preset: "vercel",
     prerender: {
       routes: [...LANGS.map((lang) => `/${lang}`)],
     },
@@ -86,5 +89,9 @@ export default defineNuxtConfig({
   site: {
     url: process.env.DOMAIN,
     name: "Ruang Cipta Digital",
+  },
+  nuxtElysia: {
+    path: "/api",
+    module: "~~/server/api",
   },
 });
