@@ -77,16 +77,6 @@ export default defineNuxtConfig({
     prerender: {
       routes: [...LANGS.map((lang) => `/${lang}`)],
     },
-    vercel: {
-      config: {
-        routes: [
-          {
-            src: "/:path*",
-            dest: "/:path*",
-          },
-        ],
-      },
-    },
   },
   routeRules: {
     [`/(${LANGS.join("|")})`]: { ssr: true, static: true },
