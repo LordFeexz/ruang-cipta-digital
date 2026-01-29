@@ -74,9 +74,18 @@ export default defineNuxtConfig({
   },
   ssr: true,
   nitro: {
-    preset: "vercel",
     prerender: {
       routes: [...LANGS.map((lang) => `/${lang}`)],
+    },
+    vercel: {
+      config: {
+        routes: [
+          {
+            src: "/:path*",
+            dest: "/:path*",
+          },
+        ],
+      },
     },
   },
   routeRules: {
