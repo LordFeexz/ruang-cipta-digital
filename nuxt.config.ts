@@ -53,7 +53,7 @@ export default defineNuxtConfig({
   },
   app: {
     head: {
-      charset: "utf-16",
+      charset: "utf-8",
       viewport: "width=device-width, initial-scale=1",
       link: [
         {
@@ -79,7 +79,7 @@ export default defineNuxtConfig({
     },
   },
   routeRules: {
-    [`/(${LANGS.join("|")})`]: { ssr: true, static: true },
+    [`/(${LANGS.join("|")})`]: { prerender: true },
   },
   sitemap: {
     urls: [...LANGS.map((lang) => `/${lang}`)],

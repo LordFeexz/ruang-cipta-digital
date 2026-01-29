@@ -1,1 +1,0 @@
-import{_ as e}from"./DlAUqK2U.js";import{c as t,o as c}from"./Bs6_DKDL.js";const o={},r={class:"text-center p-10"};function n(s,_){return c(),t("div",r,"Redirecting...")}const d=e(o,[["render",n]]);export{d as default};
