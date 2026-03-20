@@ -15,7 +15,7 @@ export default () =>
       },
     }) => {
       const {
-        public: { BLOG_PRESS_URL, APPLY_MATE_URL },
+        public: { BLOG_PRESS_URL, APPLY_MATE_URL, DIGITOOL_URL },
       } = useRuntimeConfig();
       const targetUrl = (() => {
         switch (true) {
@@ -27,6 +27,10 @@ export default () =>
             return `${
               BLOG_PRESS_URL || "http://localhost:3002/api"
             }/billing/notification`;
+          case order_id.startsWith("DGTL"):
+            return `${
+              DIGITOOL_URL || "http://localhost:5173/api"
+            }/transaction/notification`;
           default:
             return null;
         }
@@ -36,7 +40,7 @@ export default () =>
         return status(400, {
           code: 400,
           message:
-            "Invalid order_id prefix. Order ID must start with 'am' or 'bp'",
+            "Invalid order_id prefix. Order ID must start with 'am', 'bp', or 'dgtl'",
           data: null,
           errors: null,
         });
@@ -59,12 +63,12 @@ export default () =>
 
         const data = await response.json();
         return status(response.status, data);
-      } catch (error: any) {
+      } catch (error: unknown) {
         return status(500, {
           code: 500,
           message: "Failed to process notification",
           data: null,
-          errors: error.message,
+          errors: error instanceof Error ? error.message : "Unknown error",
         });
       }
     },

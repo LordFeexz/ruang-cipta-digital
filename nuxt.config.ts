@@ -70,6 +70,7 @@ export default defineNuxtConfig({
       DOMAIN: process.env.DOMAIN,
       APPLY_MATE_URL: process.env.APPLY_MATE_URL,
       BLOG_PRESS_URL: process.env.BLOG_PRESS_URL,
+      DIGITOOL_URL: process.env.DIGITOOL_URL,
     },
   },
   ssr: true,
